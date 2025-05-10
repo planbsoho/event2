@@ -4,3 +4,4 @@
 일정조회          | GET       | url/{date}    |  id          |  날짜 본문      | 200
 일정수정(전체)    | PUT       |url/{id}       |  날짜         | 날짜 수정된값   | 200
 일정삭제          | DELETE    |url/ {id}      |  날짜         | 날짜           | 204 No Content
+ㅡㅡ
