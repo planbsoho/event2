@@ -7,5 +7,5 @@ import java.time.LocalDate;
 @Getter
 public class ScheduleDeleteRequestDto {
     private Long id;
-    private LocalDate date;
+
 }

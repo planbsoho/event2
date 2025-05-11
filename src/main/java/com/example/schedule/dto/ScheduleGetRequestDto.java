@@ -5,7 +5,7 @@ import lombok.Getter;
 
 import java.time.LocalDate;
 @Getter
-public class SchedulePutRequestDto {
+public class ScheduleGetRequestDto {
     private Long id;
-    private LocalDate date;
+//    private LocalDate date;
 }

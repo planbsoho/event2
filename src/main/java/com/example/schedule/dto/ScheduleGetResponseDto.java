@@ -2,25 +2,24 @@ package com.example.schedule.dto;
 
 import com.example.schedule.entity.Schedule;
 import com.example.schedule.golbal.ScheduleStatus;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.time.LocalDate;
-import java.time.LocalDate;
 @Getter
-public class ScheduleUpdateResponseDto {
+public class ScheduleGetResponseDto {
+    /// 기능
     private Long id ;
-    private LocalDate date;//수정된날짜?
+    private LocalDate date;
     private String title;
     private String body;
-    private ScheduleStatus status; //COMPELTE
+    private ScheduleStatus status;
 
     //생성자
-    public ScheduleUpdateResponseDto(Schedule schedule){
+    public ScheduleGetResponseDto(Schedule schedule){
         this.id = schedule.getId();
         this.date = schedule.getDate();
         this.title = schedule.getTitle();
         this.body = schedule.getBody();
-        this.status = schedule.getStatus();
+        this.status= schedule.getStatus();
     }
 }
