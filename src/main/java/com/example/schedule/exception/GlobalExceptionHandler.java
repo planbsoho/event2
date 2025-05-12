@@ -11,6 +11,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NoSuchElementException.class)
     public ResponseEntity<String> handle404(NoSuchElementException e){
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("리소스가 없어용");
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("리소스가 없습니다");
     }
 }
