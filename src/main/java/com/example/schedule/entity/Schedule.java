@@ -1,5 +1,6 @@
 package com.example.schedule.entity;
 
+import com.example.schedule.dto.SchedulePatchRequestDto;
 import com.example.schedule.dto.ScheduleUpdateRequestDto;
 import com.example.schedule.golbal.ScheduleStatus;
 import lombok.AllArgsConstructor;
@@ -21,7 +22,7 @@ public class Schedule {
     private LocalDate updateDate; //수정한날짜
     //생성자
     //생성할때 사용하는 updateDate가 없는생성ㅇ자
-    public Schedule(Long id, LocalDate date, String title, String body){
+    public Schedule( Long id, LocalDate date, String title, String body ){
         this.id = id;
         this.date = date;
         this.title = title;
@@ -46,6 +47,9 @@ public class Schedule {
         this.title = dto.getTitle();
         this.body = dto.getBody();
         this.updateDate = LocalDate.now();
+    }
+    public void updateScheduleTitle(SchedulePatchRequestDto dto){
+        this.title = dto.getTitle();
     }
 
 }
